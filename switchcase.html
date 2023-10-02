@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function dooperation(op){
+                var x=parseInt( document.getElementById("n1").value);
+                var y=parseInt( document.getElementById("n2").value);
+                var z;
+                switch(op){
+                    case "+":
+                        z=x+y;
+                        break;
+                    case "-":
+                        z=x-y;
+                        break;
+                    default:
+                        z=0;
+                }
+               
+                document.getElementById("result").innerHTML="result"+z;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td> enter a 1st number</td>
+                <td><input type="text" name="n1" id="n1"></td>
+            </tr>
+            <tr>
+                <td> enter a 2st number</td>
+                <td><input type="text" name="n2" id="n2"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" onclick="javascript:dooperation('+');">
+                    <input type="button" value="-" onclick="javascript:dooperation('-');"> </td>
+            </tr>
+
+        </table>
+        <span id="result" > </span>
+        
+    </body>
+</html>
