@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <span id="result"></span>
+        <script>
+            var htmlstr="";
+            var d=new Date();
+            htmlstr+=d+ "<br/>";
+            htmlstr+=d.getDate() + "<br/>";
+            htmlstr+=d.getMonth() + "<br/>";
+            htmlstr+=d.getDay()+ "<br/>";
+            htmlstr+=d.getFullYear()+ "<br/>";
+            htmlstr+=d.getHours()+ "<br/>";
+            htmlstr+=d.getMinutes()+ "<br/>";
+            htmlstr+=d.getSeconds()+ "<br/>";
+            document.getElementById("result").innerHTML=htmlstr;
+        </script>
+    </body>
+</html>
