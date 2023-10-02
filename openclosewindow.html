@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <button onclick="openwin()"> open new window</button>
+        <button onclick="closewin()">Close window</button>
+
+        <script>
+            var mywindow;
+             function openwin(){
+                mywindow=window.open("https://www.google.com","_blank","width=400","height=400");
+             }
+             function closewin(){
+                mywindow.close();
+             }
+        </script>
+    </body>
+</html>
