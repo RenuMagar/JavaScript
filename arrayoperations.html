@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <span id="result"></span>
+        <script>
+            var htmlstr='';
+            var arr=['renu','gayu','mona'];
+            
+            htmlstr+="original arr: "+arr+"</br>";
+            htmlstr+="length :"+ arr.length+"<br/> ";
+            htmlstr+="sort :"+ arr.sort()+"<br/> ";
+            htmlstr+="join: "+ arr.join(" | ")+"<br/> ";
+            htmlstr+="pop :"+ arr.pop()+"<br/> ";
+            htmlstr+="original arr :"+arr+"</br>";
+            htmlstr+="push :"+ arr.push("mona")+"<br/> ";
+            htmlstr+="original arr:"+arr+"</br>";
+          
+            htmlstr+="shift :"+ arr.shift()+"<br/> ";
+            htmlstr+="original arr :"+arr+"</br>";
+            htmlstr+="element at first :"+arr.unshift("saku")+"</br>";
+            htmlstr+="reverse :"+arr.reverse()+"</br>";
+            htmlstr+="reverse :"+arr.reverse()+"</br>";
+            htmlstr+="element present or not :"+arr.includes("renu")+"<br/>";
+            document.getElementById("result").innerHTML=htmlstr;
+        </script>
+    </body>
+</html>
