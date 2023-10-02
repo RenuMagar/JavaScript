@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function tableof(){
+                var x=parseInt( document.getElementById("n1").value);
+                var htmlstr="";
+                var i=1;
+                while(i<=10){
+
+             
+                    htmlstr+="<br/>"+(x*i);
+                    i++;
+                   
+                }
+                document.getElementById("result").innerHTML=htmlstr;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td> enter a 1st number</td>
+                <td><input type="text" name="n1" id="n1"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="table" onclick="javascript:tableof();">
+                    </td>
+            </tr>
+
+        </table>
+        <span id="result" > </span>
+        
+    </body>
+</html>
