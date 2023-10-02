@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button onclick="openWindow1()">New Tab</button>
+        <button onclick="openWindow2()">Try window</button>
+        <button onclick="openWindow3()">Self</button>
+
+        <script>
+            function openWindow1(){
+                window.open("https://www.google.com");
+            }
+            function openWindow2(){
+                window.open("https://www.google.com","_blank","width=400,height=400");
+            }
+            function openWindow3(){
+                window.open("https://www.google.com","_self");
+            }
+        </script>
+    </body>
+</html>
