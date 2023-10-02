@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function checkfun(){
+                var a=parseInt(document.getElementById("n1").value);
+                if(a%2==0){
+                    document.getElementById("result").innerHTML= a+" is even";
+                }
+                else{
+                    document.getElementById("result").innerHTML= a+" is odd";
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>enter a number</td>
+                <td > <input type="text" name="n1" id="n1" </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="check" onclick="javascript:checkfun();"</td>
+                
+            </tr>
+        </table>
+        <span id="result"> </span>
+    </body>
+</html>
