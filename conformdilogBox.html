@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function openwindow(){
+                setTimeout(function(){
+                    if(confirm("are you sure!!")){
+                        window.open("https://www.google.com/");
+                    }
+                    else{
+                        alert("cancel");
+                    }
+                },2000);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="clickme" onclick="openwindow();" >
+    </body>
+</html>
